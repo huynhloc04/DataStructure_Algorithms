@@ -55,37 +55,32 @@ void del_elems(int *a, int &n, int pos)
 
 int main()
 {
-    // int *a = new int[5];
-    // for(int i=0; i<5; i++)
-    // {
-    //     a[i] = i+3;
-    // }
-
-    // for(int i=0; i<5; i++)
-    // {
-    //     cout << *(a+i) << " ";
-    // }
-    // cout << endl;
-
-    // int n=5;
-    // int pos = 2;
-    // int val = 1000;
-    // // add_elems(a, n, pos, val);
-    // del_elems(a, n, pos);
-
-    // for(int i=0; i<n; i++)
-    // {
-    //     cout << *(a+i) << " ";
-    // }
-    // delete[] a;
-
-    vector<int> a(5, 2);
-    a.push_back(10);
-    a.clear();
-    a.resize(10, 1);
-    for(int i=0; i<a.size(); i++)
+    int *a = new int[5];
+    for(int i=0; i<5; i++)
     {
-        cout << a[i] << " ";
+        a[i] = i+3;
     }
+
+    for(int i=0; i<5; i++)
+    {
+        cout << *(a+i) << " ";
+    }
+    cout << endl;
+
+    int n=5;
+    int pos = 2;
+    int val = 1000;
+    // add_elems(a, n, pos, val);
+    del_elems(a, n, pos);
+
+
+//     vector<int> a(5, 2);
+//     a.push_back(10);
+//     a.clear();
+//     a.resize(10, 1);
+//     for(int i=0; i<a.size(); i++)
+//     {
+//         cout << a[i] << " ";
+//     }
     return 0;
 }
